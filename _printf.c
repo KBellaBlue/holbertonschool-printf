@@ -11,14 +11,9 @@
 int _printf(const char *format, ...)
 {
 	int char_chars, i, p;
-	team_t f_list[] = {
-		{"c", print_char},
-		{"s", print_string},
-		{"%", print_percent},
-		{"d", print_integer},
-		{"i", print_integer},
-		{NULL, NULL}
-	};
+	team_t f_list[] = {{"c", print_char}, {"s", print_string},
+		{"%", print_percent}, {"d", print_integer},
+		{"i", print_integer}, {NULL, NULL}};
 	va_list arg_list;
 
 	if (format == NULL)
@@ -40,8 +35,12 @@ int _printf(const char *format, ...)
 					char_chars = char_chars + f_list[p].f(arg_list);
 					break;
 				}
-				p++;
+				else
+					p++;
 			}
+			if (p >= 5)
+				i = i - 2;
+
 			i++;
 		}
 		_write_char(format[i]);
