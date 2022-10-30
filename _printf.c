@@ -11,7 +11,6 @@
 int _printf(const char *format, ...)
 {
 	int char_chars, i, p;
-
 	team_t f_list[] = {
 		{"c", print_char},
 		{"s", print_string},
@@ -20,23 +19,19 @@ int _printf(const char *format, ...)
 		{"i", print_integer},
 		{NULL, NULL}
 	};
-
 	va_list arg_list;
 
 	if (format == NULL)
 		return (-1);
 
 	va_start(arg_list, format);
-	
 	char_chars = 0;
 	i = 0;
-
 	while (format && format[i])
 	{
 		if (format[i] == '%')
-		{
+		{ /*check the operator*/
 			i++;
-			/* Run our check for operators*/
 			p = 0;
 			while (p < 5)
 			{
@@ -53,7 +48,6 @@ int _printf(const char *format, ...)
 		i++;
 		char_chars++;
 	}
-
 	va_end(arg_list);
 	return (char_chars);
 }
