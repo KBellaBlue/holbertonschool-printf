@@ -6,7 +6,12 @@
  */
 int print_char(va_list list)
 {
-	_write_char(va_arg(list, int));
+	int c;
+
+	c = va_arg(list, int);
+
+	/*_write_char(va_arg(list, int));*/
+	_write_char(c);
 
 	return (1);
 }
