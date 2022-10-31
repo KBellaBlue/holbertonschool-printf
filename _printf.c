@@ -45,7 +45,8 @@ int _printf(const char *format, ...)
 		}
 		_write_char(format[i]);
 		i++;
-		char_chars++;
+		if (format[i] != '\0')
+			char_chars++;
 	}
 	va_end(arg_list);
 	return (char_chars);
