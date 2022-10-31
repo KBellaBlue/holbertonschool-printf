@@ -27,26 +27,37 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{ /*check the operator*/
 			i++;
-			p = 0;
-			while (p < 5)
+			if (format[i] == '%')
 			{
-				if (f_list[p].op[0] == format[i])
-				{
-					char_chars = char_chars + f_list[p].f(arg_list);
-					break;
-				}
-				else
-					p++;
+				char_chars += print_percent(arg_list);
+				i++;
 			}
-			if (p >= 5)
-				i = i - 2;
-
+			else
+			{
+				p = 0;
+				while (p < 5)
+				{
+					if (f_list[p].op[0] == format[i])
+					{
+						char_chars += f_list[p].f(arg_list);
+						break;
+					}
+					else
+						p++;
+				}
+				if (p >= 5)
+				{
+					char_chars += _write_char(format[i - 1]);
+					char_chars += _write_char(format[i]);
+				}
+				i++;
+			}
+		}
+		else
+		{
+			char_chars += _write_char(format[i]);
 			i++;
 		}
-		_write_char(format[i]);
-		i++;
-		if (format[i] != '\0')
-			char_chars++;
 	}
 	va_end(arg_list);
 	return (char_chars);
