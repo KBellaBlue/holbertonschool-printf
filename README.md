@@ -78,6 +78,7 @@ Output:
 
 
 <h2> Files </h2>
+
 ```
 man_3_printf
 	custom manpage for custom _printf function
@@ -94,8 +95,8 @@ _write_char.c
 
 <h2> Installation </h2>
 
-In your terminal, in the subdirectory of your choosing, type:
-```
+<p>In your terminal, in the subdirectory of your choosing, type: </p>
+
 $ git clone https://github.com/KBellaBlue/holbertonschool-printf.git
 ```
 
