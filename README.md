@@ -1,11 +1,11 @@
 <p align="center"> <h1> :computer: printf(): A Crash Course :computer: </h1> </p>
 
 
-<h2> Synopsis </h2>
+## Synopsis
 _printf can be used as a replacement for the stdio.h function printf. Our function can be used to print characters, strings, and integers. Our function returns the number of characters printed (excluding the null byte used to end output to strings) and writes output to the standard output stream. Please note that our function does NOT handle flag characters, field width, precision, or length modifiers.
 
 
-<h2> Definition & Parameters</h2>
+## Definition & Parameters
 **printf()**
 <p>A function in the ANSI C standard library included in the “stdio.h” file</p>
 <p>Used to print out different pieces of information</p>
@@ -27,9 +27,9 @@ This project handles the following conversion specifiers:
 %i - integer
 ```
 
-<h2> Examples </h2>
+## Examples
 
-####%c (Character) Specifier####
+### %c (Character) Specifier
 ```
 #include <stdio.h> /*include stdio header file that allows us to perform input and output operations*/
 
@@ -46,7 +46,7 @@ Output
 a
 ```
 
-####%s (String) Specifier####
+### %s (String) Specifier
 ```
 #include <stdio.h>
 int main()
@@ -63,7 +63,7 @@ The string value of s is Go Holberton
 ```
 
 
-####%d & %i (Decimal Integer) Specifier#### 
+### %d & %i (Decimal Integer) Specifier 
 
 ```
 #include <stdio.h> 
@@ -82,7 +82,9 @@ Output
 2022
 ```
 
-<p><h2> Files </h2></p>
+<p>
+## File
+</p>
 
 ```
 man_3_printf
@@ -98,7 +100,7 @@ _write_char.c
 	contains function definition to write characters
 ```
 
-<h2> Installation </h2>
+## Installation
 
 <p>In your terminal, in the subdirectory of your choosing, type: </p>
 
