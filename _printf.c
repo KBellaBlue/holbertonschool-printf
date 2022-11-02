@@ -10,7 +10,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int char_chars, i = 0, p;
+	int char_chars = 0, i = 0, p;
 	team_t f_list[] = {{"c", print_char}, {"s", print_string},
 		{"%", print_percent}, {"d", print_integer},
 		{"i", print_integer}, {NULL, NULL}};
@@ -18,45 +18,30 @@ int _printf(const char *format, ...)
 
 	if (format == NULL || (format[i] == '%' && !format[i + 1]))
 		return (-1);
-
 	va_start(arg_list, format);
-	char_chars = 0;
-	while (format && format[i])
+	while (format[i])
 	{
 		if (format[i] == '%')
-		{ /*check the operator*/
-			i++;
-			if (format[i] == '%')
-			{
+		{
+			if (format[i + 1] == '%')
 				char_chars += print_percent(arg_list);
-				i++;
-			}
 			else
 			{
-				p = 0;
-				while (p < 5)
-				{
-					if (f_list[p].op[0] == format[i])
-					{
+				for (p = 0; p < 5; p++)
+					if (f_list[p].op[0] == format[i + 1])
 						char_chars += f_list[p].f(arg_list);
-						break;
-					}
-					else
-					p++;
-				}
-				if (p >= 5)
+				if ((format[i + 1] != 'd' && format[i + 1] != 'c'
+				&& format[i + 1] != 'i' && format[i + 1] != 's' && format[i + 1] != '%'))
 				{
-					char_chars += _write_char(format[i - 1]);
 					char_chars += _write_char(format[i]);
+					char_chars += _write_char(format[i + 1]);
 				}
-				i++;
 			}
-		}
-		else
-		{
-			char_chars += _write_char(format[i]);
 			i++;
 		}
+		else
+			char_chars += _write_char(format[i]);
+		i++;
 	}
 	va_end(arg_list);
 	return (char_chars);
