@@ -22,7 +22,8 @@ int _printf(const char *format, ...)
 	while (format[i])
 	{
 		if (format[i] == '%')
-		{ /*check the operator*/
+		{
+			i++;
 			if (format[i] == '%')
 				char_chars += print_percent(arg_list);
 			else
@@ -40,7 +41,6 @@ int _printf(const char *format, ...)
 					char_chars += _write_char(format[i]);
 				}
 			}
-			i++;
 		}
 		else
 			char_chars += _write_char(format[i]);
