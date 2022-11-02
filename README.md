@@ -76,9 +76,9 @@ Output
 ```
 2005
 2022
+```
 
-
-<h2> Files </h2>
+<p><h2> Files </h2></p>
 
 ```
 man_3_printf
@@ -99,7 +99,7 @@ _write_char.c
 <p>In your terminal, in the subdirectory of your choosing, type: </p>
 ```
 $ git clone https://github.com/KBellaBlue/holbertonschool-printf.git
+```
 
-
-:dancer: Authors :dancer:
-Julia Bullard & Khiera Freeman
+<p>:dancer: Authors :dancer:</p>
+<p>Julia Bullard & Khiera Freeman</p>
