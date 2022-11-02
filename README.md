@@ -6,17 +6,17 @@ _printf can be used as a replacement for the stdio.h function printf. Our functi
 
 
 ## Definition & Parameters
-**printf()**
-<p>A function in the ANSI C standard library included in the “stdio.h” file</p>
+<p>**printf()**</p>
+A function in the ANSI C standard library included in the “stdio.h” file
 <p>Used to print out different pieces of information</p>
 
 
-Syntax:
+**Syntax:**
 ```
 int printf(const char *format, ...);
 ```
 
-<p>The first argument is a string that contains the text to be printed on the screen. The string may contain format specifiers, which are used to specify how the subsequent arguments are to be displayed. Format specifiers begin with a percent sign (%) and are followed by optional format modifiers and conversion specifiers.
+<p>The first argument is a string that contains the text to be printed on the screen. The string may contain format specifiers, which are used to specify how the subsequent arguments are to be displayed. Format specifiers begin with a percent sign (%) and are followed by optional format modifiers and conversion specifiers.</p>
 
 
 This project handles the following conversion specifiers:
@@ -82,9 +82,7 @@ Output
 2022
 ```
 
-<p>
 ## File
-</p>
 
 ```
 man_3_printf
