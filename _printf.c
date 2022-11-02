@@ -20,6 +20,7 @@ int _printf(const char *format, ...)
 		return (-1);
 
 	va_start(arg_list, format);
+	_write_char('\n');
 	char_chars = 0;
 	i = 0;
 	while (format && format[i])
