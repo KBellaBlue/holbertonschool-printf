@@ -72,7 +72,8 @@ int main()
 	return 0; 
 }
 ```
-Output:
+Output
+```
 2005
 2022
 
@@ -96,9 +97,9 @@ _write_char.c
 <h2> Installation </h2>
 
 <p>In your terminal, in the subdirectory of your choosing, type: </p>
-
-$ git clone https://github.com/KBellaBlue/holbertonschool-printf.git
 ```
+$ git clone https://github.com/KBellaBlue/holbertonschool-printf.git
+
 
 :dancer: Authors :dancer:
 Julia Bullard & Khiera Freeman
