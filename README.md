@@ -2,22 +2,20 @@
 
 
 <h2> Synopsis </h2>
-<p>
 _printf can be used as a replacement for the stdio.h function printf. Our function can be used to print characters, strings, and integers. Our function returns the number of characters printed (excluding the null byte used to end output to strings) and writes output to the standard output stream. Please note that our function does NOT handle flag characters, field width, precision, or length modifiers.
-</p>
+
 
 <h2>Definition & Parameters</h2>
 printf()
-<p>A function in the ANSI C standard library included in the “stdio.h” file</p>
-<p>Used to print out different pieces of information</p>
-	
-<p>Syntax:</p>
+<p>	A function in the ANSI C standard library included in the “stdio.h” file</p>
+<p>	Used to print out different pieces of information</p>
 
+
+<p>Syntax:</p>
 ```
 int printf(const char *format, ...);
 ```
-
-<p> The first argument is a string that contains the text to be printed on the screen. The string may contain format specifiers, which are used to specify how the subsequent arguments are to be displayed. Format specifiers begin with a percent sign (%) and are followed by optional format modifiers and conversion specifiers.</p>
+The first argument is a string that contains the text to be printed on the screen. The string may contain format specifiers, which are used to specify how the subsequent arguments are to be displayed. Format specifiers begin with a percent sign (%) and are followed by optional format modifiers and conversion specifiers.
 
 This project handles the following conversion specifiers:
 ```
