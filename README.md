@@ -61,6 +61,7 @@ The string value of s is Go Holberton
 
 
 <h3>%d & %i (Decimal Integer) Specifier</h3> 
+
 ```
 #include <stdio.h> 
 int main()
