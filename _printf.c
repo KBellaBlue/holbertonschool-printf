@@ -16,7 +16,7 @@ int _printf(const char *format, ...)
 		{"i", print_integer}, {NULL, NULL}};
 	va_list arg_list;
 
-	if (format == NULL)
+	if (format == NULL || (format[i] == '%' && !format[i + 1]))
 		return (-1);
 
 	va_start(arg_list, format);
