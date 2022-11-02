@@ -6,7 +6,7 @@ _printf can be used as a replacement for the stdio.h function printf. Our functi
 
 
 ## Definition & Parameters
-<p>**printf()**</p>
+**printf()**
 A function in the ANSI C standard library included in the “stdio.h” file
 <p>Used to print out different pieces of information</p>
 
