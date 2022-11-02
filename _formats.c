@@ -61,6 +61,7 @@ int print_integer(va_list list)
 	num_length = print_int(va_arg(list, int));
 
 	return (num_length);
+}
 
 /**
  * unsigned_integer - Prints Unsigned integers
