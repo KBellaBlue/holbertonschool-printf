@@ -1,0 +1,35 @@
+.SH NAME
+_printf - formatted output conversion
+.SH DEPENDENCIES
+.HP To use this function, the following header file is required in its entirety:
+.HP #include <main.h>
+.SH INSTALLATION
+.HP Type the following into the subdirectory of your choosing in your terminal:
+.HP $ git clone https://github.com/KBellaBlue/holbertonschool-printf.git
+.SH SYNOPSIS
+.HP _printf can be used as a replacement for the stdio.h function printf. Our function can be used to print characters, strings, and integers. Our function returns the number of characters printed (excluding the null byte used to end output to strings) and writes output to the standard output stream.
+.SH LIMITATIONS
+.HP Our function does NOT handle:
+.HP flag characters
+.HP field width
+.HP precision
+.HP length modifiers
+.SH SYNTAX
+.HP int printf(const char *format, ...);
+.HP The first argument is a string that contains the text to be printed on the screen. The string may contain format specifiers, which are used to specify how the subsequent arguments are to be displayed. Format specifiers begin with a percent sign (%) and are followed by optional format modifiers and conversion specifiers.
+.SH SPECIFIERS
+.HP %c - signed character
+.HP %s - string
+.HP %d - integer
+.HP %i - integer
+.SH EXAMPLES
+.HP To print characters:
+.HP _printf("%c\n", char);
+.HP To print strings:
+.HP _printf("%s\n", str);
+.HP To print integers:
+.HP _printf("%d, %i\n", 2005, 2022);
+.SH RETURN VALUE
+.HP Returns the number of characters printed (excluding the null byte used the end output to strings) upon success.
+.P AUTHORS
+Julia Bullard & Khiera Freeman

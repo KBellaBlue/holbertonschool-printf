@@ -8,6 +8,5 @@
  */
 int _write_char(char c)
 {
-	write(STDOUT_FILENO, &c, 1);
-	return (1);
+	return (write(1, &c, 1));
 }
