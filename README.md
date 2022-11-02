@@ -97,6 +97,7 @@ _write_char.c
 <h2> Installation </h2>
 
 <p>In your terminal, in the subdirectory of your choosing, type: </p>
+
 ```
 $ git clone https://github.com/KBellaBlue/holbertonschool-printf.git
 ```
