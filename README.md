@@ -8,15 +8,16 @@
 
 <h2> Definition & Parameters </h2>
 printf()
-	A function in the ANSI C standard library included in the “stdio.h” file
-	Used to print out different pieces of information
+	<p>A function in the ANSI C standard library included in the “stdio.h” file
+	Used to print out different pieces of information</p>
 	
-Syntax:
-```	int printf(const char *format, ...); ```
+<p>Syntax:</p>
+```	int printf(const char *format, ...);
+```
 
-	The first argument is a string that contains the text to be printed on the screen. The string may contain format specifiers, which are used to
+	<p>The first argument is a string that contains the text to be printed on the screen. The string may contain format specifiers, which are used to
 	specify how the subsequent arguments are to be displayed. Format specifiers begin with a percent sign (%) and are followed by optional format
-	modifiers and conversion specifiers.
+	modifiers and conversion specifiers.</p>
 
 This project handles the following conversion specifiers:
 ```
@@ -40,9 +41,10 @@ int main() /*calls the main function and returns an integer*/
 	return 0; /*0 is the standard for the successful execution of a program*/
 }
 ```
-Output:
+Output
+```
 a
-
+```
 
 %s (String) Specifier
 ```
@@ -55,9 +57,10 @@ int main()
 	return 0;
 }
 ```
-Output:
+Output
+```
 The string value of s is Go Holberton
-
+```
 
 
 <h3>%d & %i (Decimal Integer) Specifier</h3> 
