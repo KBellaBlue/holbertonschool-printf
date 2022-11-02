@@ -1,6 +1,7 @@
-#ifndef PRINT_F
-#define PRINT_F
+#ifndef MAIN_H
+#define MAIN_H
 
+/*Libraries*/
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>

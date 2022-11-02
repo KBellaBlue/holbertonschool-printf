@@ -62,17 +62,3 @@ int print_integer(va_list list)
 
 	return (num_length);
 }
-
-/**
- * unsigned_integer - Prints Unsigned integers
- * @list: List of all of the arguments
- * Return: a count of the numbers
- */
-int unsigned_integer(va_list list)
-{
-	int num_length;
-
-	num_length = print_integer(list);
-
-	return (num_length);
-}
